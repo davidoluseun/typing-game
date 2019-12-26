@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AOD Typing Game</title>
+    <link href="https://fonts.googleapis.com/css?family=Merriweather|Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header class="site-title">
+        <h1>AOD Typing Game</h1>
+    </header><!-- .site-title -->
+    <main>
+        <article class="intro">
+            <p>This is a typing game. Your goal is to type each word in the given amount of time to score a point. The Time left starts counting down when you start typing, the game is over when the time reaches zero. Click the Start over button to restart the game at any time. Good Luck!</p>
+        </article><!-- .intro -->
+
+        <section class="test-area">
+            <p>Type the Given Word Within <em>7</em> Seconds:</p>
+
+            <div id="current-word">establishment</div>
+
+            <div class="input-wrap">
+                <input id="input" type="text" placeholder="Type here"></input>
+            </div><!-- .input-wrap -->
+
+            <div id="message"></div>
+
+            <div class=info>
+                <div>Time Left: 
+                    <span id="timer">7</span>
+                </div>
+                <div>Score: 
+                    <span id="score">0</span>
+                </div>
+            </div><!-- .info -->
+
+            <button id="reset">Start over</button>
+        </section><!-- .test-area -->
+    </main>
+
+</body>
+
+</html>

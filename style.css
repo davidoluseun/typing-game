@@ -1,0 +1,108 @@
+/*  Color palette
+#FAEBD7 Antiquewhite
+#2E8B57 Seagreen
+#F08080 Lightcoral
+*/
+
+/* Global style 
+----------------------------*/
+body,
+button,
+input {
+    font-family: 'Roboto', sans-serif;
+	font-size: 18px;
+	line-height: 1.5;
+}
+body {
+    margin: 0;
+    background: #FAEBD7;
+}
+.intro p,
+.test-area {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Site title 
+----------------------------*/
+.site-title {
+    background: #2E8B57;
+    color: #fff;
+    padding: 1em 2em;
+    text-align: center;
+}
+.site-title h1 {
+    font-family: 'Merriweather', serif;
+}
+
+/* Intro 
+----------------------------*/
+.intro {
+    background: #F08080;
+    color: #fff;
+    padding: 2em;
+}
+
+/* Test area 
+----------------------------*/
+.test-area {
+    padding: 0 2em;
+    text-align: center;
+}
+#current-word {
+    font-size: 2em;
+}
+
+/* Input */
+.input-wrap {
+    display: flex;
+}
+#input {
+    flex: 1;
+    border: 5px solid #F08080;
+    border-radius: 5px;
+}
+#input:focus {
+    border-color: #2E8B57;
+}
+
+/* Message */
+#message {
+    padding-top: .5em;
+    font-size: 1.75em;
+}
+
+/* Info */
+.info {
+    font-size: 1.75em;
+    padding: .5em 0;
+}
+
+/* Reset */
+#reset {
+    padding: .5em 1em;
+    font-size: 1.2em;
+    font-weight: bold;
+    background: #FAEBD7;
+    color: #2E8B57;
+    border: 5px solid #F08080;
+    border-radius: 5px;
+}
+#reset:hover,
+#reset:focus {
+    background: #F08080;
+}
+
+/* Media queries
+----------------------------*/
+@media (min-width: 576px) {
+
+    .info {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    #current-word {
+        font-size: 4em;
+    }
+}

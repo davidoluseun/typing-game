@@ -1,0 +1,12 @@
+# Ignore CSS minified file
+style.min.css
+
+# Ignore JS minified file
+script.min.js
+
+# Ignore ESLint file
+.eslintrc.js
+
+# Ignore package.json file
+*.json
+
