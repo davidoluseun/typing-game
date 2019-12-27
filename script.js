@@ -7,7 +7,7 @@ const currentWord = document.querySelector("#current-word"),
 	reset = document.querySelector("#reset");
 
 // Globals
-let time = 10,
+let time = 7,
 	score = 0,
 	interval,
 	isPlaying = false;
@@ -84,7 +84,7 @@ function matchWord() {
 		displayWords();
 		input.value = "";
 		score++;
-		time = 11;
+		time = 8;
 	} else {
 		message.textContent = "";
 	}
