@@ -96,7 +96,7 @@ function startOver() {
 	clearInterval(interval);
 	isPlaying = false;
 	score = 0;
-	time = 8;
+	time = 7;
 	input.value = "";
 	displayScore.textContent = score;
 	timer.textContent = time;
