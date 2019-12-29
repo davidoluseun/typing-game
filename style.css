@@ -69,13 +69,13 @@ body {
 /* Message */
 #message {
     padding-top: .5em;
-    font-size: 1.75em;
 }
 
 /* Info */
 .info {
-    font-size: 1.75em;
-    padding: .5em 0;
+    display: flex;
+    justify-content: space-between;
+    padding: .8em 0;
 }
 
 /* Reset */
@@ -97,10 +97,9 @@ body {
 ----------------------------*/
 @media (min-width: 576px) {
 
+    #message,
     .info {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
+        font-size: 1.75em;
     }
     #current-word {
         font-size: 4em;
