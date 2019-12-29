@@ -45,6 +45,7 @@ let words = [
 	"springgreen",
 	"definition"
 ];
+
 // Display random words
 function displayWords() {
 	let randIndex = Math.floor(Math.random() * words.length);
@@ -68,7 +69,7 @@ function countdown() {
 function startGame() {
 	let textEnteredLength = input.value.length;
 
-	if (textEnteredLength == 0 && !isPlaying) {
+	if (textEnteredLength == 1 && !isPlaying) {
 		isPlaying = true;
 		interval = setInterval(countdown, 1000);
 	}
@@ -105,6 +106,6 @@ function startOver() {
 
 // Event listeners for load, keyboard input and reset button 
 window.addEventListener("load", displayWords);
-input.addEventListener("keypress", startGame);
-input.addEventListener("keyup", matchWord);
+input.addEventListener("input", startGame);
+input.addEventListener("input", matchWord);
 reset.addEventListener("click", startOver);
